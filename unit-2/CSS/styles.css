@@ -1,0 +1,313 @@
+/* Base styles (mobile-first approach) */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Header - Navigation */
+.header {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+
+}
+
+
+ ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+
+li {
+    margin: 10px auto;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 36px;
+    margin: 0;
+}
+
+.bottom-name {
+    font-size: 24px;
+    margin: 0;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    margin: 10px auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+
+
+/* Student Section */
+#student {
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* Portfolio Section */
+#portfolio {
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.port {
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.port-name {
+    text-transform: uppercase;
+}
+
+/* Footer Section */
+footer {
+    padding: 0;
+    text-align: center;
+    margin: auto;
+}
+
+#footer {
+    padding-bottom: 3rem;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    padding: 0;
+
+}
+
+.line {
+    max-width: 70%;
+    margin: auto;
+}
+
+
+.bottom-row ul li:not(#back-to-top) {
+    display: none; /* Hide all links except "Back To Top" */
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+}
+
+ ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+ }
+
+li {
+    margin: 10px auto;
+    font-size: 24px;
+    padding: 1rem;
+}
+
+#student {
+    padding: 4rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.stud {
+    max-width: 50%;
+    align-self: first baseline;
+}
+
+.stud p {
+    text-align: left;
+    padding-top: 0;
+}
+
+#portfolio {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.port {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.port-name {
+    min-width: 100%;
+}
+
+
+.port-pic {
+    width: 50%;
+}
+
+.bottom-row ul li:not(#back-to-top) {
+    display: contents; /* Hide all links except "Back To Top" */
+}
+
+#back-to-top {
+    display: none;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    padding: 1rem;
+}
+
+.bottom-row ul li a {
+    margin: auto;
+    padding: 10px;
+    font-size: 24px;
+    justify-content:space-around;
+}
+
+.bottom-name {
+    padding: 1.4rem;
+}
+
+.line {
+    max-width: 70%;
+    margin: auto;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .port-pic {
+        max-width: 40%;
+    }
+
+    #student {
+        justify-content: space-between;
+        max-width: 1024px;
+        padding: 5rem;
+    }
+
+    .stud {
+        align-self: first baseline;
+    }
+
+    .stud p {
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction:row;
+        margin: auto;
+        padding-left: 29rem;
+    }
+    
+     ul {
+        list-style-type: none;
+        padding: 1rem;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+     }
+    
+    li {
+        margin: 10px auto;
+        font-size: 24px;
+        padding: 1rem;
+    }
+
+    .name {
+        padding: 1.8rem;
+    }
+
+    .bottom-name {
+        padding: 1.5rem;
+    }
+    
+}
